@@ -27,7 +27,7 @@ $output = shell_exec("python3 backend.py");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health Hub</title>
-    <link rel="stylesheet" type="text/css" href="../style/home_page_style.css">
+    <link rel="stylesheet" type="text/css" href="home_page_style.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="../script/search.js" defer></script>
 </head>
