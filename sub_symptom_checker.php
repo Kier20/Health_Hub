@@ -1,5 +1,5 @@
 <?php
-include '../connection/db_connection.php';
+include 'db_connection.php';
 include 'sub_login.php';
 
 $email;
@@ -11,7 +11,7 @@ session_start();
 // Check if the user is logged in
 if (!isset($_SESSION['user_id'])) {
     // Redirect to login page or handle unauthorized access
-    header("Location: ../index.php");
+    header("Location: index.php");
     exit();
 }
 
@@ -45,10 +45,10 @@ if ($result->num_rows > 0) {
     insertSelectedSymptoms($conn, $lastName, $email, $selectedSymptoms);
 
     // Call the Python script to predict diseases based on the stored symptoms
-    exec('python3 C:/xampp/htdocs/health_hub/python/predict_disease.py');
+    //exec('python3 C:/xampp/htdocs/health_hub/python/predict_disease.py');
 
     // Redirect to treatment page or any other page after successful submission
-    header("Location: ../php/treatment.php");
+    header("Location: treatment.php");
     exit();
 } else {
     // Handle case where user data is not found
