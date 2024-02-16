@@ -63,7 +63,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 } else {
-    header("Location: ../register.php");
+    header("Location: register.php");
     exit();
 }
 ?>
