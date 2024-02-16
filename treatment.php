@@ -25,7 +25,7 @@ if (isset($_GET['logout'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Health Hub</title>
-    <link rel="stylesheet" type="text/css" href="../style/treatment_style.css">
+    <link rel="stylesheet" type="text/css" href="treatment_style.css">
     <script src="../script/search.js" defer></script>
 </head>
 <body>
@@ -52,7 +52,7 @@ if (isset($_GET['logout'])) {
         <div class="treatment-list">
         <?php
         // Include the database connection file
-        include_once '../connection/db_connection.php';
+        include_once 'db_connection.php';
 
         // Query to fetch data for the disease "Anemia of chronic disease"
         $sql = "SELECT * FROM diseases WHERE name = 'Anemia of chronic disease'";
