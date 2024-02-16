@@ -18,7 +18,7 @@ if (isset($_GET['logout'])) {
     exit();
 }
 
-$output = shell_exec("python3 ../python/backend.py");
+$output = shell_exec("python3 backend.py");
 ?>
 
 <!DOCTYPE html>
