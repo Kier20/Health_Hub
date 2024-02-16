@@ -1,0 +1,73 @@
+.navbar {
+    background-color: #3b3b3b;
+    color: #fff;
+    padding: 5px 0;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav li {
+    margin-right: 20px;
+}
+
+.navbar-nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.user-section {
+    display: flex;
+    align-items: center;
+}
+
+.user-section .welcome {
+    margin-right: 10px;
+}
+
+.logout-btn {
+    padding: 8px 16px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.logout-btn:hover {
+    background-color: #c82333;
+    cursor: pointer;
+}
+
+/* Container styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.container h1 {
+    color: #1E90FF;
+}
+.treatment-list p {
+    margin: 10px 0;
+}
+.treatment-list p strong {
+    font-weight: bold;
+    color: #1E90FF;
+}
