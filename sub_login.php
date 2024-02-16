@@ -1,5 +1,5 @@
 <?php
-include '../connection/db_connection.php';
+include 'db_connection.php';
 
 $email;
 $password_attempt;
@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['user_email'] = $row['email'];
             $_SESSION['last_name'] = $row['last_name'];
             
-            header('Location: ../php/home_page.php');
+            header('Location: home_page.php');
             exit();
         } else {
             $errors['password'] = "Incorrect password";
